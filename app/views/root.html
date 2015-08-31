@@ -1,0 +1,37 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand headbar-brand" ui-sref="root.overview">
+        <img alt="Brand" src="images/greenbox.png" class="headbar-image">
+      </a>
+    </div>
+    <div class="headbar-user">Hello {{userName}}</div>
+    <span>{{ myDate| date:'MM/dd/yyyy'}}</span>
+    <button class="btn btn-default navbar-right headbar-button" ng-click="logout()">Log Out</button>
+</nav>
+<br/><br/><br/>
+
+<div class="row">
+  <div class="col-xs-2">
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+          <li ui-sref-active="selected" class="sideItem" ui-sref="root.overview">
+              <span class="glyphicon glyphicon-home"></span> &nbsp OVERVIEW
+          </li>
+          <li ui-sref-active="selected" class="sideItem" ui-sref="root.deduction">
+              <span class="glyphicon glyphicon-globe"></span> &nbsp Deduction
+          </li>
+          <li ui-sref-active="selected" class="sideItem" ui-sref="root.producer">
+              <span class="glyphicon glyphicon-user"></span> &nbsp Producer
+          </li>
+          <li ui-sref-active="selected" class="sideItem" ui-sref="root.contact">
+              <span class="glyphicon glyphicon-phone"></span> &nbsp Contact
+          </li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-xs-10">
+    <ui-view></ui-view>
+  </div>
+</div>
+

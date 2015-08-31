@@ -1,0 +1,30 @@
+#editbar {
+		background: linear-gradient(to left, rgba(51, 153, 255, 0), rgba(51, 153, 255, 1));;
+		position: absolute;
+		width: 1000px;
+		z-index: 2;
+		right: -2000px;
+		padding: 3px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+}
+
+#editbar.ng-hide-remove {
+	animation: 1s fadeInRight ease;
+}
+
+#editbar.ng-hide-add {
+ animation: 1s fadeOutRight ease; 
+}
+
+.form-control.ebar-name {
+  width: 150px;
+}
+
+.form-control.ebar-long {
+  width: 400px;
+}
+
+.form-control.ebar-value {
+  width: 80px;
+}
