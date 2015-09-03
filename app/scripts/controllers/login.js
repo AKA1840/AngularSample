@@ -8,10 +8,9 @@
  * 
  */
 angular.module('gbApp')
-  .controller('loginCtrl', function ($scope, loginService) {
-    $scope.msgtxt = '';
-	$scope.login = function(data){
-		//call login service
-		loginService.login(data, $scope); 
-	};
-  });
+	.controller('loginCtrl', function ($scope, loginService) {
+    	$scope.msgtxt = '';
+		$scope.login = function(data){
+			loginService.login(data, $scope); 
+		};
+  	});

@@ -7,14 +7,10 @@
  * # Controller for the root page 
  */
 angular.module('gbApp')
-  .controller('rootCtrl', function($scope, loginService, getUserService) {
-    getUserService.getUser().$promise.then(function(response) {
-      $scope.userName = response.userName;
-    });
-
-    $scope.logout = function(){
-    	loginService.logout();
-    };
-    
-    $scope.myDate = new Date();
-  });
+    .controller('rootCtrl', function($scope, loginService, sessionService) {
+  		$scope.userName = sessionService.get('user');    
+    	$scope.myDate = new Date();
+		$scope.logout = function(){
+    		loginService.logout();
+    	};
+  	});

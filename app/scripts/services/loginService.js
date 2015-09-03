@@ -11,10 +11,9 @@ angular.module('gbApp')
 	.factory('loginService',function($http, $state, sessionService) {
 		return{
 			login: function(data, scope){
-				//send data to login api
-				var promise = $http.post('/api/login', data);
-				promise.then(function(response){
-						sessionService.set('user','tmx');
+				$http.post('/api/login', data)
+				.then(function(response){
+						sessionService.set('user',data.userName);
 						$state.go('root.deduction');
 					}, function(response){
 						scope.msgtxt = 'incorrect information';  

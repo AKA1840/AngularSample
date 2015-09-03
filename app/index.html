@@ -9,6 +9,7 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -19,6 +20,7 @@
     <link rel="stylesheet" href="styles/displayCard.css">
     <link rel="stylesheet" href="styles/addbar.css">
     <link rel="stylesheet" href="styles/editbar.css">
+    <link rel="stylesheet" href="styles/frameOneDirective.css">
     <!-- endbuild -->
   </head>
   <body ng-app="gbApp">
@@ -39,6 +41,7 @@
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-ui-grid/ui-grid.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -55,8 +58,8 @@
 
 
     <script src="scripts/directives/barDirective.js"></script>
+    <script src="scripts/directives/frameOneDirective.js"></script>
 
-    <script src="scripts/services/getUserService.js"></script>
     <script src="scripts/services/loginService.js"></script>
     <script src="scripts/services/sessionService.js"></script>
     <!-- endbuild -->

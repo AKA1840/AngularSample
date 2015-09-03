@@ -1,0 +1,22 @@
+<div class="newdiv">
+	<div class="newContent" ng-class="{'slide-in-anim': showContent}">
+		<h2 style="margin-left:30px">Step 1</h2>
+		<div class="frameonecolorboxcontainor" style="width:90%:margin:10px auto">
+		<div ng-repeat="colorbox in colorboxes" class="frameonecolorbox"
+		style="background-color:{{colorbox.name}}">{{colorbox.name}}</div>
+		</div>
+		
+		<br/>
+		<label>Deduction Name</label><br/>
+		<input  /><br/>
+		<label>Long Description</label><br/>
+		<input  /><br/>
+		<label>Short Description</label><br/>
+		<input  /><br/>
+		<label>Value </label><br/>
+		<input  /><br/>
+	
+		<button ng-click="cancel()">Cancel</button>
+		<button ng-click="confirm()">Confirm</button>
+	</div> 
+</div>

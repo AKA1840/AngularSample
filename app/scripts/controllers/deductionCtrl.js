@@ -7,7 +7,7 @@
  * # Controller for the deduction page
  */
 angular.module('gbApp')
-  .controller('deductionCtrl', function($scope, $window, getUserService, $http, $modal) {
+  .controller('deductionCtrl', function($scope, $window, $http, $modal) {
   
         // initial data display mode to be "List"
         $scope.displayModel = "list";
@@ -62,9 +62,7 @@ angular.module('gbApp')
         $scope.editbool = true;
 
         $scope.addDeduction = function(){
-            $scope.SbHeight = $window.innerHeight - 250 + 'px';
             $scope.bool = !$scope.bool;
-            $scope.OriPos = '-100px';       
         };
 
         $scope.editDeduction = function(Item) {
@@ -78,5 +76,9 @@ angular.module('gbApp')
             $scope.editLong = Item.shortDescription;
             $scope.editValue = Item.value;        
         };
+
+        $scope.close = function() {
+            $scope.bool = true;
+        }
 
   });
