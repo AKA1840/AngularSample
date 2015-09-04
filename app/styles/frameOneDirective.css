@@ -5,24 +5,48 @@
 	top:0;
 	z-index: 9000;
 	position: fixed;
+	padding: 0;
 }
 
 .newContent {
 	width: 90%;
-	height:90%;
-	margin:20px auto;
+	height:100%;
+	margin: 0;
 	background-color: white;
 	border-radius: 10px;
 	padding-top: 10px;
-	
+	float:left;
 }
+
+.newContentBackground {
+	width: 10%;
+	height: 100%;
+	margin: 0;
+	float:left;
+}
+
+
 
 .newContent.slide-in-anim {
 	-webkit-animation:  1s fadeInRight ease; 
  	   -moz-animation:  1s fadeInRight ease; 
   			animation:  1s fadeInRight ease; 
+}
+ 
+ .newContent.slide-out-anim {
+	-webkit-animation:  1s fadeOutRight ease; 
+ 	   -moz-animation:  1s fadeOutRight ease; 
+  			animation:  1s fadeOutRight ease; 
+}
+
+.newdiv.slide-out-anim {
+	-webkit-animation:  1s fadeOut ease; 
+ 	   -moz-animation:  1s fadeOut ease; 
+  			animation:  1s fadeOut ease; 
+
 
 }
+
 
 .frameonecolorbox {
 	width:11%;

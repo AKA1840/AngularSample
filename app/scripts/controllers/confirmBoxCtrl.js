@@ -9,7 +9,7 @@
 angular.module('gbApp')
   .controller('confirmBoxCtrl', function ($scope, $modalInstance) {
 	$scope.ok = function () {
-    	$modalInstance.close("Yes");
+    	$modalInstance.close('Yes');
   	};
 
   	$scope.cancel = function () {

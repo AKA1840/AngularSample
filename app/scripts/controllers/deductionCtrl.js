@@ -57,28 +57,24 @@ angular.module('gbApp')
         };
 
         // Edit box and add box
-        $scope.indexFlag = 0;
-        $scope.bool = true;
-        $scope.editbool = true;
+        $scope.addPageFlag = false;
+        $scope.editPageFlag = false;
 
-        $scope.addDeduction = function(){
-            $scope.bool = !$scope.bool;
+        $scope.openAddPage = function(){
+            $scope.addPageFlag = true;
         };
 
-        $scope.editDeduction = function(Item) {
-            $scope.SbHeight = $window.innerHeight - 250 + 'px';
-            $scope.editbool = !$scope.editbool;
-            $scope.editOriPos = '-100px';
-            $scope.indexFlag = $scope.deductions.indexOf(Item);
-
-            $scope.editName = Item.deductionName;
-            $scope.editShort = Item.longDescription;
-            $scope.editLong = Item.shortDescription;
-            $scope.editValue = Item.value;        
+        $scope.closeAddPage = function() {
+            $scope.addPageFlag = false;
         };
 
-        $scope.close = function() {
-            $scope.bool = true;
-        }
+        $scope.openEditPage = function(Item){
+            $scope.editPageFlag = !$scope.editPageFlag;
+            $scope.editPageContent = Item;
+        };
+
+        $scope.closeEditPage = function(){
+            $scope.editPageFlag = false;
+        };
 
   });

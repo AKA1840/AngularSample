@@ -1,0 +1,19 @@
+<div class="newdiv" style="overflow:auto" ng-class="{ 'slide-out-anim':hideContent}">
+
+	<div class="newContentBackground" ng-click="cancel()"></div>
+	<div class="newContent" ng-class="{'slide-in-anim': showContent, 'slide-out-anim':hideContent}">
+		<form name="newEditForm" style="width:600px; margin:auto" novalidate>
+			<label>Deduction Name</label><br/>
+			<input type="text" ng-model="newEditDeduction.deductionName" class="form-control" required/><br/>
+			<label>Long Description</label><br/>
+			<input type="text" ng-model="newEditDeduction.longDescription" class="form-control" required/><br/>
+			<label>Short Description</label><br/>
+			<input type="text" ng-model="newEditDeduction.shortDescription" class="form-control" required/><br/>
+			<label>Value </label><br/>
+			<input type="text" ng-model="newEditDeduction.value" class="form-control" required/><br/>
+		
+			<button ng-click="cancel()"  class="btn btn-default">Cancel</button>
+			<button ng-click="confirm()" ng-disabled="newEditForm.$invalid" class="btn btn-default">Confirm</button>
+		</form>
+	</div> 
+</div>
