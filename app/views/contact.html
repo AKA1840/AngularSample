@@ -1,1 +1,11 @@
-<h2>Hello Contact</h2>
+<h2 ng-click="testParams()">Hello ng-Table</h2>
+	<div style="width:90%;margin:0 auto">
+    <table ng-table="tableParams" show-filter="true" class="table table-bordered table-striped" >
+      <tr ng-repeat="row in $data">
+        <td title="'Installation At'" filter="{installationAt: 'text'}" sortable="'installationAt'">{{row.installationAt}}</td>
+        <td title="'Admin Email'" filter="{adminEmail: 'text'}" sortable="'adminEmail'">{{row.adminEmail}}</td>
+        <td title="'Powered By'" filter="{poweredBy: 'text'}" sortable="'poweredBy'">{{row.poweredBy}}</td>
+        <td title="'Powered By Icon'" filter="{poweredByIcon: 'text'}" sortable="'poweredByIcon'">{{row.poweredByIcon}}</td>
+      </tr>
+    </table>
+	</div>

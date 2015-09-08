@@ -15,7 +15,8 @@ angular
     'ngMessages',
     'ngResource',
     'ui.router',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'ngTable'
   ])
   .config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/login');
