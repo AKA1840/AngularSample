@@ -1,24 +1,23 @@
-<div class="newdiv" style="overflow:auto" ng-class="{ 'slide-out-anim':hideContent}">
+
+<div class="newdiv" ng-class="{ 'slide-out-anim':hideContent}">
   <div class="newContentBackground" ng-click="cancel()"></div>
-
-
   <div class="newContent" ng-class="{'slide-in-anim': showContent, 'slide-out-anim':hideContent}">
 	<h2 style="margin-left:30px">Step 1</h2>
-	<div class="frameonecolorboxcontainor" style="width:90%:margin:10px auto">
+	<div class="frameonecolorboxcontainor">
 		<div ng-repeat="colorbox in colorboxes" class="frameonecolorbox"
 			style="background-color:{{colorbox.name}}">
 		</div>
 	</div>
 	<br/>
-	<form name="newAddForm" style="width:600px; margin:auto" novalidate>
-	  <label>Deduction Name</label>
-	  <input type="text" ng-model="newAddDeduction.deductionName" class="form-control" required/>
-	  <label>Long Description</label>
-	  <input type="text" ng-model="newAddDeduction.longDescription" class="form-control" required/>
-	  <label>Short Description</label>
-	  <input type="text" ng-model="newAddDeduction.shortDescription" class="form-control" required/>
-	  <label>Value </label>
-	  <input type="text" ng-model="newAddDeduction.value" class="form-control" required/>
+	<form name="newAddForm" class="newAddForm" novalidate>
+	  <label>Deduction Name</label><br/>
+	  <input type="text" ng-model="newAddDeduction.deductionName" class="form-control" required/><br/>
+	  <label>Long Description</label><br/>
+	  <input type="text" ng-model="newAddDeduction.longDescription" class="form-control" required/><br/>
+	  <label>Short Description</label><br/>
+	  <input type="text" ng-model="newAddDeduction.shortDescription" class="form-control" required/><br/>
+	  <label>Value </label><br/>
+	  <input type="text" ng-model="newAddDeduction.value" class="form-control" required/><br/>
 	  <button ng-click="cancel()"  class="btn btn-default">Cancel</button>
 	  <button ng-click="confirm()" ng-disabled="newAddForm.$invalid" class="btn btn-default">Confirm</button>
 	</form>

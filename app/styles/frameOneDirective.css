@@ -6,6 +6,7 @@
 	z-index: 9000;
 	position: fixed;
 	padding: 0;
+	overflow:auto;
 }
 
 .newContent {
@@ -25,8 +26,6 @@
 	float:left;
 }
 
-
-
 .newContent.slide-in-anim {
 	-webkit-animation:  1s fadeInRight ease; 
  	   -moz-animation:  1s fadeInRight ease; 
@@ -43,10 +42,7 @@
 	-webkit-animation:  1s fadeOut ease; 
  	   -moz-animation:  1s fadeOut ease; 
   			animation:  1s fadeOut ease; 
-
-
 }
-
 
 .frameonecolorbox {
 	width:11%;
@@ -56,5 +52,19 @@
 	border-radius: 5px;
 }
 
+.frameonecolorboxcontainor {
+	width:90%;
+	margin:10px auto;
+}
+
+.newAddForm {
+	margin: 20px auto;
+	width: 600px;
+}
+
+.newEditForm {
+	margin: 50px auto;
+	width: 600px;
+}
 
 

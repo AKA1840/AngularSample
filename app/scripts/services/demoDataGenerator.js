@@ -1,16 +1,20 @@
 'use strict';
 
+/**
+ * @ngdoc demoDataGenerator
+ * @name gbApp
+ * @description
+ * # generate data for ng-table 
+ * 
+ */
 angular.module('gbApp')
 	.service('demoDataGenerator', function($http){
-		var template = {
+		  var template = {
       		"installationAt": "Philadelphia, PA",
       		"adminEmail": "Eric@gmail.com",
       		"poweredBy": "AKA",
       		"poweredByIcon": "/images/aka.gif"
     	};
-
- 
-
 
     	this.generateData = function(number) {
     		var newArray = [];

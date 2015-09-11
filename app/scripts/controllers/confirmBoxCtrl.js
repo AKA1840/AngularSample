@@ -4,7 +4,7 @@
  * @ngdoc confirmBoxCtrl
  * @name gbApp
  * @description
- * # controller for the confirm box
+ * # Controller for the confirm box
  */
 angular.module('gbApp')
   .controller('confirmBoxCtrl', function ($scope, $modalInstance) {

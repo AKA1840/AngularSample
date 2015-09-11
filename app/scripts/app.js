@@ -57,7 +57,12 @@ angular
       .state('root.contact', {
         url: '/contact',
         templateUrl: 'views/contact.html',
-        controller: 'contactCtrl'
+        controller: 'contactCtrl',
+        resolve: {
+          contactContent: function(demoDataGenerator){
+            return demoDataGenerator.generateData(100);
+          }
+        }
       });
   })
   .run(function ($rootScope, loginService) {
