@@ -2,7 +2,7 @@
 This is an Angular Sample Project
 
 1. Step into folder AngularSample
-2. "npm install & bower install"
+2. "npm install && bower install"
 3. Step into folder samplerServer then
 4. "npm install"
 5. "npm start", to start the api server
